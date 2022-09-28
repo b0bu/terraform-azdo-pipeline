@@ -1,0 +1,31 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - "*"
+pr:
+  branches:
+    include: 
+      - main
+  paths:
+    include:
+      - "*"
+
+pool:
+  vmImage: "ubuntu-18.04"
+
+# steps:
+#   - bash: echo "yolo"
+
+stages:
+- stage: "stage_1"
+  displayName: "stage 1"
+  jobs:
+  - job: "job_1"
+    displayName: "job 1"
+    steps:
+    - bash: echo "yolo"
+
+
