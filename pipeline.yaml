@@ -14,7 +14,7 @@ pr:
       - "*"
 
 pool:
-  vmImage: "ubuntu-18.04"
+  vmImage: "ubuntu-22.04"
 
 # steps:
 #   - bash: echo "yolo"
